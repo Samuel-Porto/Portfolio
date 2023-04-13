@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color-azul);
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--color-font-semi-escuro);
+}

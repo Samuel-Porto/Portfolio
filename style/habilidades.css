@@ -1,0 +1,10 @@
+.habilidades {
+    height: calc(100vh - 60px);
+}
+
+.habilidades ul {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}

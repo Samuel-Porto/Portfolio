@@ -1,0 +1,10 @@
+.sobre-mim {
+    height: 100vh;
+}
+
+.sobre-mim p {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+}

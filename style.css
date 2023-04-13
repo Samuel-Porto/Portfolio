@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+@import url('style/corpo.css');
+@import url('style/apresentacao.css');
+@import url('style/sobre-mim.css');
+@import url('style/habilidades.css');
+
+@import url('style/footer.css');
+
+
+:root {
+    --color-bg: #EEEEEE;
+    --color-azul: #00ADB5;
+    --color-font-claro: #EEEEEE;
+    --color-font-escuro: #222831;
+    --color-font-semi-escuro: #2E4F4F;
+
+    --font-primary: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--color-bg);
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--color-azul);
+    padding: 3rem 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--color-font-semi-escuro);
+    padding: 2rem 0;
+    text-align: center;
+}

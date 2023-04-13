@@ -1,0 +1,33 @@
+.apresentacao {
+    text-align: center;
+    height: 100vh;
+}
+
+.apresentacao img {
+    width: 264px;
+    height: 264px;
+    border-radius: 50%;
+    margin: 8rem 0 2rem 0;
+}
+
+.apresentacao .descricao h4 {
+    font-weight: 700;
+}
+
+.apresentacao .descricao p {
+    color: var(--color-font-semi-escuro);
+    padding-bottom: 2rem;
+}
+.apresentacao .descricao .link_curriculo {
+    font-size: 24px;
+    text-decoration: none;
+    color: var(--color-font-claro);
+    background: var(--color-azul);
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    border: var(--color-azul) 2px solid;
+}
+.apresentacao .descricao .link_curriculo:hover {
+    background: var(--color-font-claro);
+    color: var(--color-azul);
+}
