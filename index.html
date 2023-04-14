@@ -14,11 +14,11 @@
         <section class="apresentacao">
             <img src="img/perfil/perfil.jpg" alt="Perfil">
 
-            <div class="descricao">
+            <div class="apresentacao__descricao">
                 <h4>Olá, meu nome é: </h4>
                 <h1>Samuel P. Porto</h1>
                 <p>Desenvolverdor Front-End Jr.</p>
-                <a class="link_curriculo" href="https://docs.google.com/document/d/e/2PACX-1vRmmYMyapfutYgtN9vg0pKIIknW-7CYoiD7zbXHE07rOuoLR8Iv9JtPppjUY71FJx9PrldvGUeFBVbP/pub">
+                <a class="link--curriculo" href="https://docs.google.com/document/d/e/2PACX-1vRmmYMyapfutYgtN9vg0pKIIknW-7CYoiD7zbXHE07rOuoLR8Iv9JtPppjUY71FJx9PrldvGUeFBVbP/pub">
                     Curriculo
                 </a>
             </div>
@@ -32,23 +32,44 @@
 
         <section class="habilidades">
             <h2>habilidades</h2>
-            <ul>
-                <li>
+            <ul class="habilidades__icones">
+                <li class="habilidade__icone"data-habilidadesIcones="html">
                     <img src="img/habilidades/html.svg" alt="HTML">
                 </li>
-                <li>
+                <li class="habilidade__icone" data-habilidadesIcones="css">
                     <img src="img/habilidades/css.svg" alt="CSS">
                 </li>
-                <li>
+                <li class="habilidade__icone" data-habilidadesIcones="sass">
                     <img src="img/habilidades/sass.svg" alt="SASS">
                 </li>
-                <li>
+                <li class="habilidade__icone" data-habilidadesIcones="js">
                     <img src="img/habilidades/java-script.svg" alt="Java Script">
                 </li>
-                <li>
+                <li class="habilidade__icone" data-habilidadesIcones="git">
                     <img src="img/habilidades/git.svg" alt="Git">
                 </li>
             </ul>
+            <ul class="habilidades__descricao">
+                <li class="" data-habilidadesDescricao="hover">
+                    Clique em uma habilidade para ver a descrição
+                </li>
+                <li class="hide" data-habilidadesDescricao="html">
+                    HTML é uma linguagem de marcação, sendo o bloco de formação mais basico da web. É nele onde voce define a estrutura e o significado de cada conteúdo do documento.
+                </li>
+                <li class="hide" data-habilidadesDescricao="css">
+                    Andando de mãos dadas ao HTML ou XML, o CSS define a estilização de cada conteúdo do documento ao qual ele foi aplicado. É com ele que você deixa o conteúdo do seu site mais atrativo.
+                </li>
+                <li class="hide" data-habilidadesDescricao="sass">
+                    SASS é um pré-processador CSS que é interpretada ou compilada para CSS. Com ela, fica mais fácil de se estilizar o CSS em um documento.
+                </li>
+                <li class="hide" data-habilidadesDescricao="js">
+                    JavaScript é uma linguagem de programação de alto nivel. Junto ao HTML e CSS, o JavaScript é uma das principais tecnologias web, servindo para fazer páginas interativas ao usuário.
+                </li>
+                <li class="hide" data-habilidadesDescricao="git">
+                    Git é um sistema de controle de versões de código, e é usado principalmente para desenvolvimento de Softwares. Ele pode ser usado também como um repositório ou como um registro de histórico de um arquivo.
+                </li>
+            </ul>
+
         </section>
     </section>
 
@@ -63,5 +84,7 @@
         </ul>
     </footer>
 
+    <script src="main.js"></script>
+    <script src="app/mostraHabilidades.js"></script>
 </body>
 </html>

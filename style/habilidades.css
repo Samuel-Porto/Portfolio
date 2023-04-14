@@ -1,10 +1,40 @@
+@keyframes filterAnim {
+    from {scale: 1;}
+    to {scale: 1.2;}
+}
+
 .habilidades {
     min-height: calc(100vh - 60px);
 }
 
-.habilidades ul {
+.habilidades .habilidades__icones {
     display: flex;
-    flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+.habilidades .habilidade__icone:hover {
+    cursor: pointer;
+}
+
+.habilidades .habilidade__icone--selecionado {
+    animation-duration: .5s;
+    animation-name: filterAnim;
+    filter: invert(73%) sepia(64%) saturate(7452%) hue-rotate(152deg) brightness(100%) contrast(100%);
+    scale: 1.2;
+}
+
+.habilidades .habilidades__descricao {
+    border-bottom: 4px var(--color-font-semi-escuro) solid;
+    border-top: 4px var(--color-font-semi-escuro) solid;
+    padding: 2rem 0;
+}
+
+.habilidades .habilidades__descricao li {
+    color: var(--color-font-semi-escuro);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    padding: 0 1rem;
+    text-align: center;
 }

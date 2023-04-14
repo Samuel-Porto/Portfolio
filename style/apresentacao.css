@@ -14,15 +14,15 @@
     width: 264px;
 }
 
-.apresentacao .descricao h4 {
+.apresentacao .apresentacao__descricao h4 {
     font-weight: 700;
 }
 
-.apresentacao .descricao p {
+.apresentacao .apresentacao__descricao p {
     color: var(--color-font-semi-escuro);
     padding-bottom: 2rem;
 }
-.apresentacao .descricao .link_curriculo {
+.apresentacao .apresentacao__descricao .link--curriculo {
     background: var(--color-azul);
     border: var(--color-azul) 2px solid;
     border-radius: 999px;
@@ -31,7 +31,7 @@
     padding: .5rem 1rem;
     text-decoration: none;
 }
-.apresentacao .descricao .link_curriculo:hover {
+.apresentacao .apresentacao__descricao .link--curriculo:hover {
     background: var(--color-font-claro);
     color: var(--color-azul);
 }
@@ -54,7 +54,7 @@
         gap: 2rem;
     }
 
-    .apresentacao .descricao {
+    .apresentacao .apresentacao__descricao {
         text-align: left;
     }
 
@@ -65,7 +65,7 @@
         gap: 4rem;
     }
 
-    .apresentacao .descricao {
+    .apresentacao .apresentacao__descricao {
         border-left: var(--color-azul) 4px solid;
         padding: 0 0 1rem 2rem;
     }
