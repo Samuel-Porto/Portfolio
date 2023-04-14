@@ -20,20 +20,41 @@
 
 body {
     background: var(--color-bg);
+    color: var(--color-font-escuro);
     font-family: var(--font-primary);
 }
 
 h1 {
+    color: var(--color-azul);
     font-size: 64px;
     font-weight: 700;
-    color: var(--color-azul);
-    padding: 3rem 0;
+    padding: 1rem 0;
 }
-
 h2 {
+    color: var(--color-font-semi-escuro);
     font-size: 48px;
     font-weight: 600;
-    color: var(--color-font-semi-escuro);
     padding: 2rem 0;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 80px;
+    }
+    h2 {
+        font-size: 64px;
+        padding: 4rem 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h1 {
+        font-size: 96px;
+    }
+
+    h2 {
+        font-size: 80px;
+        padding: 6rem;
+    }
 }

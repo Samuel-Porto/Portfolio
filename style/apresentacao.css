@@ -1,13 +1,17 @@
 .apresentacao {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
     text-align: center;
-    height: 100vh;
 }
 
 .apresentacao img {
-    width: 264px;
-    height: 264px;
     border-radius: 50%;
+    height: 264px;
     margin: 2rem 0 2rem 0;
+    width: 264px;
 }
 
 .apresentacao .descricao h4 {
@@ -19,15 +23,57 @@
     padding-bottom: 2rem;
 }
 .apresentacao .descricao .link_curriculo {
-    font-size: 24px;
-    text-decoration: none;
-    color: var(--color-font-claro);
     background: var(--color-azul);
-    padding: .5rem 1rem;
-    border-radius: 999px;
     border: var(--color-azul) 2px solid;
+    border-radius: 999px;
+    color: var(--color-font-claro);
+    font-size: 24px;
+    padding: .5rem 1rem;
+    text-decoration: none;
 }
 .apresentacao .descricao .link_curriculo:hover {
     background: var(--color-font-claro);
     color: var(--color-azul);
+}
+
+@media screen and (min-width:768px) {
+    .apresentacao img {
+        height: 512px;
+        width: 512px;
+    }
+
+    .apresentacao p, 
+    .apresentacao h4 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .apresentacao {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .apresentacao .descricao {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    .apresentacao {
+        gap: 4rem;
+    }
+
+    .apresentacao .descricao {
+        border-left: var(--color-azul) 4px solid;
+        padding: 0 0 1rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .apresentacao img {
+        width: 768px;
+        height: 758px;
+    }
 }

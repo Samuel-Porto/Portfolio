@@ -1,10 +1,33 @@
 .sobre-mim {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sobre-mim p {
     text-align: center;
     font-size: 24px;
     font-weight: 300;
-    line-height: 32px;
+    line-height: 24px;
+}
+
+@media screen and (min-width: 768px) {
+    .sobre-mim p {
+        font-size: 32px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .sobre-mim p {
+        border-left: 4px solid var(--color-azul);
+        border-right: 4px solid var(--color-azul);
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (min-width:1920px) {
+    .sobre-mim p {
+        padding: 0 8rem;
+        font-size: 40px;
+        line-height: 50px;
+    }
 }

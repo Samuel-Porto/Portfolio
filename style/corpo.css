@@ -1,3 +1,18 @@
 .corpo {
-    margin: 0 1rem;
+    max-width: 1920px;
+    padding: 0 1rem;
+}
+
+@media screen and (min-width:768px) {
+    .corpo {
+        padding: 0 4rem;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .corpo {
+        margin: 0 auto;
+        padding: 0 8rem;
+        
+    }
 }
