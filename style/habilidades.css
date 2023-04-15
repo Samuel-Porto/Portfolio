@@ -27,7 +27,7 @@
 .habilidades .habilidades__descricao {
     border-bottom: 4px var(--color-font-semi-escuro) solid;
     border-top: 4px var(--color-font-semi-escuro) solid;
-    padding: 2rem 0;
+    margin-bottom: 1rem;
 }
 
 .habilidades .habilidades__descricao li {
@@ -35,6 +35,28 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 30px;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .habilidades .habilidades__icones {
+        padding-bottom: 1rem;
+    }
+
+    .habilidades .habilidade__icone img {
+        width: 96px;
+    }
+
+    .habilidades .habilidades__descricao li{
+        font-size: 24px;
+        line-height: 40px;
+        padding: 4rem 2rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .habilidades .habilidades__descricao li {
+        font-size: 32px;
+    }
 }
